@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "extends": "@jumbo-supermarkten/eslint-config/vue",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.js", "*.stories.js", "*.mock.js", "test/**/*.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "jest/valid-expect": 0
+      }
+    }
+  ],
+  "globals": {
+    "$": true,
+    "adyen": true,
+    "AdyenCheckout": true,
+    "assetsURL": true,
+    "productImagesURL": true,
+    "check": true,
+    "configURL": true,
+    "cookieDomain": true,
+    "createTokenURL": true,
+    "customerID": true,
+    "done": true,
+    "doodlesURL": true,
+    "filterId": true,
+    "formApiURL": true,
+    "gatewayURL": true,
+    "headerDetailsURL": true,
+    "homepageURL": true,
+    "cdmApiUrl": true,
+    "jumboStore": true,
+    "loginPageUrl": true,
+    "prefilledURL": true,
+    "productionMode": true,
+    "typeaheadURL": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017
+  }
+}
